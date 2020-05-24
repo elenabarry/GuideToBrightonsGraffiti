@@ -1,0 +1,329 @@
+/*-----------------------
+Base Styles
+------------------------*/
+body { 
+  background-color:#3c6fa6;   
+  font-family: 'Montserrat', sans-serif, "Times New Roman", Times, Serif;
+  color: #333;
+  font-size: 100%;
+  line-height: 1.2;	
+}
+
+h1	{
+  font-family:'Abril Fatface', cursive, "Times New Roman", Times, Serif;
+  font-size: 3.5em;
+  margin: 0 0 .5em 0;
+  line-height: 4.0;
+  text-align: center;
+}
+
+h2  { 
+    font-size: 1.875em; 
+    line-height: 3.0;
+    margin: 0 0 1.0em 0;
+	text-align: center;
+ }	
+ 
+h3 	{
+	font-size: 1.750em;
+    line-height: 1.1; 
+	text-align: center;
+} 
+	
+h4	{
+	font-size: 2.0em;
+	text-align: center;
+}
+	
+h5	{
+	font-size: 1.25em;
+    font-weight: normal;
+	text-align: center;
+ }
+
+p	{	
+    font-size:1.25rem;
+    line-height: 1.5;
+	margin: 0 0 1.5em 0;
+}
+
+ul, ol{
+	font-size: 20px;
+	list-style-position:inside;
+}
+
+
+li	{
+	overflow: auto;
+	display:list-item;
+    margin: 0.5em;
+}
+
+
+aside li {
+	font-size: 90%; 
+	margin: 2em 2em 2em 0;
+}
+
+figcaption{
+	text-align: center;
+}
+
+small	{
+	font-size: 0.75em;
+}
+
+a {text-decoration: none;}
+
+a:link	{ color:#547cbc; }
+a:visited {	color: #10a585; }
+a:hover { 
+
+color: #3300FF; 
+text-decoration: underline;
+
+} 
+
+a:active { color: #366; }
+
+a[href^="#top"] {
+	font-size: .75em;
+	background: url(../learningJournal/images/up.png) no-repeat left bottom;
+	padding-left: 1.4em;
+}
+
+footer a:link { color: #fff; }
+
+
+
+/* -----------------------
+Layout Styles
+------------------------*/
+
+#wrapper
+{
+	max-width: 70em;
+	margin: 0 auto;
+	background-color: #79d9d8;
+	
+}
+
+.banner
+{
+	color: #fff;
+	background: #555;
+	padding: 1em 1.25em 1em 1.25em;
+	color: #900;
+	background-image: url(images/basicbanner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;    
+    background-position: center; 
+}
+
+.banner-fluid {
+  width: 100%;
+  max-width: 1165px; /*max-width measurement should be the actual width of your image*/
+  
+}
+
+.banner-clipped {
+  overflow: hidden;
+
+}
+
+.menu {
+	background: #000;
+	padding: 0;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.post	{
+	padding: 1px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	background-color: #ffaa0c;
+  
+}
+
+.posttext {
+	
+	background-color: #FFF;
+	
+}
+
+.reference {
+	margin-right: 0.8em;
+	background-color: #FFF;
+	
+ 		
+}
+
+.reference ol {
+	
+ list-style-position: outside;
+ 		
+}
+	
+.table-container {
+  
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid #32345C;
+  overflow-x: auto;
+}
+ 
+.table-container::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+}
+ 
+ table
+{
+	border-spacing: 0;
+	border-collapse: collapse;
+	border-top: 1px solid #ddd;
+	max-width: 35em;
+	margin: 1em auto 2em auto;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: #E6E6E6;
+}
+
+th, td
+{
+	font-size: 90%;
+	padding: .2em 1em .2em 1em;
+	border: 1px solid #ddd;
+	vertical-align: top;
+	text-align: left;
+	white-space:nowrap;
+	
+}
+
+ 
+article {
+	padding: 1em;
+}
+
+main  {
+	 margin: 1em 0 1em 0;
+}
+
+aside	{
+	   margin: 1em 0 1em 0;
+		
+}
+
+footer {
+	color: #fff;
+	background: #555;
+	padding: 2em 3em 2em 3em;
+}
+
+img	{
+	max-width: 100%; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*------------------------
+Mobile screens - portrait
+-------------------------------------------------------*/
+
+@media (max-width : 30em) {
+	
+	h1{ line-height: 2.5em;}
+}
+
+/* -----------------------------------------------
+Menu Navigation - vertical layout for smaller screens
+--------------------------------------------------*/
+
+.menu ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.menu li
+{
+	display: block; 
+	margin: 0;
+	color: #cc0022;
+	
+}
+
+.menu a
+{
+	display: block;
+	padding: .7em 1.25em .7em 1.25em;
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px solid gray;
+}
+
+.menu a:link { color: #fff; }
+.menu a:visited { color: #DFDFDF; }
+.menu a:focus { color: #fff; }
+.menu a:hover { color: #3300FF; }
+.menu a:active { color: #fff; }
+
+
+/* ----------------------------------------------------
+Wider screens - i.e. desktop, laptop, tablet landscape
+-------------------------------------------------------*/
+
+@media (min-width: 55em) /* 880px*/
+{
+	.banner { padding: 1.5em 3em 1.5em 3em; }
+	.menu { padding: 1em 3em 1em 3em; }
+	article { padding: 2em; }
+
+	main
+	{
+		float: left;
+		width: 65%;
+		margin-right: 3%;
+		border-right: 1px solid #000;
+	}
+
+	aside
+	{
+		float: left;
+		width: 30%;
+		margin-bottom: 1em;
+		 
+	}
+
+
+	.menu li
+	{
+		display: inline;
+		margin: 0 1em 0 0;
+	}
+
+/* Menu navigation - inline layout for wider screens */	
+	
+	.menu a
+	{
+		display: inline;
+		padding: 0;
+		border-bottom: 0;
+	}
+	
+}
+
+.fltlt { 
+	float: left;
+	margin-right: .5em;
+}
+.clear { 
+	clear: both;
+}

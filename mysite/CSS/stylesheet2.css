@@ -1,0 +1,410 @@
+/*-----------------------
+Base Styles
+------------------------*/
+body { 
+  background-color: #3c6fa6;
+  font-family: 'Montserrat', sans-serif, "Times New Roman", Times, Serif;
+  color: #333;
+  font-size: 100%;
+  
+  line-height: 1.2;	
+  
+}
+
+h1	{
+  font-family:'Abril Fatface', cursive, "Times New Roman", Times, Serif;
+  font-size: 3.5em;
+  margin: 0 0 .5em 0;
+  line-height: 4.0;
+  text-align: center; 
+}
+	
+h2	{
+	font-size: 1.875em;
+	font-weight: bold;
+	text-align: center;
+	line-height: 3;
+}
+
+h3 	{
+	font-size: 1.750em;  
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.1;
+}
+
+h4	{
+	text-align: center;
+	font-size: 1.5em;	
+}
+
+h5	{
+	font-size: 1em;  
+	text-align: center;
+	line-height: 1.1;
+}
+
+p	{
+
+    font-size:1.25rem;
+    line-height: 1.5;
+	margin:1em 2em 1em 2em; 
+		
+}
+
+ul,ol	{
+	font-size: 20px;
+	list-style-position:inside;
+	
+}
+li	{
+	margin-right: 1.5em;
+	overflow: auto;
+	
+}
+
+
+figcaption	{
+	text-align: center;
+}
+
+small	{
+	
+	font-size: 0.75em;
+	text-align:center;
+
+}
+
+a {text-decoration: none;}
+
+a:link	{color:#547cbc;}
+a:visited {color: #58ccbc;}
+a:hover {
+	color: #3300FF;
+    text-decoration: underline;
+} 
+a:active {color: #366;}
+
+a[href^="#top"] {
+	font-size: .75em;
+	background: url(../learningJournal/images/up.png) no-repeat left bottom;
+	padding-left: 1.4em;
+}
+		
+footer a:link { color: #fff; }
+/* -----------------------
+Layout Styles
+------------------------*/
+
+#wrapper
+{
+	max-width: 70em;
+	margin: 0 auto;
+	background-color: #79d9d8;
+	
+}
+
+.banner
+{
+	color: #fff;
+	background: #555;
+	padding: 1em 1.25em 1em 1.25em;
+	color: #900;
+	background-image: url(images/basicbanner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;    
+    background-position: center; 
+}
+
+.banner-fluid {
+  width: 100%;
+  max-width: 1165px; 
+  
+}
+
+.banner-clipped {
+  overflow: hidden;
+}
+
+.menu
+{
+	background: #000;
+	padding: 0;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.media	{
+	margin: 0;
+	padding: 0;
+}
+
+
+.media li	{
+	margin: 0;
+	padding: 0;
+}
+
+	footer {
+	color: #fff;
+	background: #555;
+	padding: 1em 1.25em 1em 1.25em;
+}
+
+.post	{
+	
+	padding: 1px;
+	margin: 30px;
+	
+	background-color: #ffaa0c;
+  
+}
+.posttext{
+	
+    margin-top: 2px;
+	margin-bottom: 2px;
+	background-color: #fff;
+
+}
+
+
+.reference {
+	margin-top: 2px;
+	margin-bottom: 2px;
+	background-color: #FFF;
+ }
+	
+.reference ol {
+	
+ list-style-position: outside;
+ 		
+}
+	
+	
+.reference li{
+	margin: 1em 2em 1em 0;
+}
+
+
+
+p.dropcap:first-letter	{
+  float: left;
+  font-family:Georgia, "Times New Roman", Times, serif;
+  color:#000;
+  font-size: 2.0em;
+  line-height: 0.2;
+  margin: 8px 5px 0 0;
+}
+
+img	{
+	max-width: 100%; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+aside {
+		margin: 2em;
+}
+	
+footer {
+	color: #fff;
+	background: #555;
+	padding: 2em 3em 2em 3em;
+}
+				
+form {
+	overflow:auto;
+}
+
+label { 
+	text-align: center;
+	display: block;
+	margin-left: 1.5em;
+	margin-bottom: 1em;
+	padding: 1em;
+		
+}
+
+input {
+    position: relative;
+    display: block;
+	margin: auto;
+	padding: 1em;
+	background-color: #ffee80;
+	border: 3px solid #32345C;
+	text-align: center; 
+}
+  
+textarea {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	background-color: #ffee80;
+	border: 3px solid #32345C;
+	position: relative;
+    display: block;
+    margin : 0 auto;
+	padding: 1em;
+    overflow: auto; 
+	
+
+}
+  
+legend{
+   text-align: center;
+   margin: 0 auto; 
+}
+
+@media screen and (min-width: 50em)
+    {
+article { 
+	column-count: 2;
+	column-width: 20em;
+	column-gap:2em;
+}
+  
+} /*Media query ends here*/
+
+
+/* ------------------------------
+Flexible video
+---------------------------------*/
+
+.video-wrapper {
+  max-width: 960px;
+  padding: 35px;
+  margin: 0 auto;
+}
+iframe	{
+  width: 100%;
+  height: auto;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /*16:9 */ 
+  height: 0; 
+  overflow: hidden;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* ------------------------------
+Image gallery using flexbox
+---------------------------------*/
+/*Flex items*/
+.media {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 0.7em 0 0.7em;
+	padding: 0;
+}
+.media-item {
+	display: flex; 
+	width: 100%;
+}
+
+/*640 px - tablet portrait orientation - 2 columns*/
+@media screen and (min-width: 40em)
+{
+.media-item	{ width: 50%; }
+}
+
+/*960 px* - tablet landscape orientation and above - 3 columns*/
+@media screen and (min-width: 60em) 
+{
+.media-item	{ width: 33.33%; }
+}
+
+.media-content {
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	padding: 1em;
+	width: 100%;
+}
+
+/* -----------------------------------------------
+Menu Navigation - vertical layout for smaller screens
+--------------------------------------------------*/
+
+.menu ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.menu li
+{
+	display: block; 
+	margin: 0;
+	color: #cc0022;
+	
+}
+
+.menu a
+{
+	display: block;
+	padding: .7em 1.25em .7em 1.25em;
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px solid gray;
+}
+
+.menu a:link { color: #fff; }
+.menu a:visited { color: #DFDFDF; }
+.menu a:focus { color: #C00; }
+.menu a:hover { color: #3300FF; }
+.menu a:active { color: #fff; }
+
+
+/* ----------------------------------------------------
+Wider screens - i.e. desktop, laptop, tablet landscape
+-------------------------------------------------------*/
+
+@media (min-width: 55em) /* 880px*/
+{
+	.banner { padding: 1.5em 3em 1.5em 3em; }
+	.menu { padding: 1em 3em 1em 3em; }
+		
+	main
+	{
+		margin: 2em;
+	}
+	
+   article { 
+	column-count: 2;
+	column-width: 20em;
+	column-gap:2em;
+}
+
+	.menu li
+	{
+		display: inline;
+		margin: 0 1em 0 0;
+	}	
+	
+	.menu a
+	{
+		display: inline;
+		padding: 0;
+		border-bottom: 0;
+	}
+	
+	fieldset {
+	
+    margin: 0 7em 2em 7em;
+}
+
+}
+
+.clear { 
+	clear: both;
+}

@@ -5,6 +5,7 @@ What I learnt:
 
   HTML 
   CSS
-  Speed optimisation 
+  Speed optimisation
+  Google fonts 
 
 ![New colours (has jaggers near gallery)](https://user-images.githubusercontent.com/53048127/92501143-0bc61080-f1f6-11ea-836e-08f68e98d550.jpg)
